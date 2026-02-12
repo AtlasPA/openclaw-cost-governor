@@ -1,3 +1,12 @@
+---
+name: Cost Governor
+description: Track LLM costs, enforce budgets, enable autonomous agent payments via x402. First OpenClaw skill with agent-to-agent commerce.
+tags: cost-tracking, budget-management, x402-payments, agent-economy, circuit-breaker, llm-costs, autonomous-payments
+author: AtlasPA
+repository: https://github.com/AtlasPA/openclaw-cost-governor
+version: 1.0.0
+---
+
 # Cost Governor - OpenClaw Skill
 
 **First OpenClaw skill where AI agents can autonomously pay for Pro features via x402 protocol.**
