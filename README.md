@@ -19,7 +19,7 @@ OpenClaw users are experiencing:
 
 **Real-time cost tracking with proactive alerts and automatic circuit breakers.**
 
-> 💡 **Want all 5 infrastructure tools in one command?** Check out the [OpenClaw Infrastructure Suite](https://github.com/AtlasPA/openclaw-infrastructure) - installs and manages Cost Governor + 4 other tools (Memory System, Context Optimizer, Smart Router, Rate Limit Manager) with unified dashboard and analytics.
+> 💡 **Want all 5 infrastructure tools in one command?** Check out the [OpenClaw Infrastructure Suite](https://github.com/AtlasPA/openclaw-infrastructure) - installs and manages Cost Governor + 4 other tools (Memory System, Context Optimizer, Smart Router, API Quota Tracker) with unified dashboard and analytics.
 
 ## Features
 
