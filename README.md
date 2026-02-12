@@ -1,8 +1,10 @@
 # OpenClaw Cost Governor
 
-**Stop burning money on AI tokens.** Budget alerts, automatic circuit breakers, and cost optimization for OpenClaw.
+**The only OpenClaw tool that combines cost tracking + x402 agent payments + self-funding model.**
 
-🤖 **First OpenClaw tool where AI agents can pay autonomously via x402 protocol.** [Learn more →](AGENT-PAYMENTS.md)
+Stop burning money on AI tokens. Budget alerts, automatic circuit breakers, and agents can autonomously subscribe & pay for Pro features.
+
+🤖 **First tool enabling true agent-to-agent commerce** - if it saves your agent >0.5 USDT/month, it pays for itself. [Agent Payments →](AGENT-PAYMENTS.md)
 
 ## The Problem
 
@@ -27,6 +29,27 @@ OpenClaw users are experiencing:
 - ✅ **Cost Optimization** - AI-powered recommendations to reduce spending
 - ✅ **Multi-Provider Support** - Works with OpenAI, Anthropic, Google, and custom providers
 - 🤖 **x402 Agent Payments** - Agents can autonomously pay for Pro tier (0.5 USDT/month)
+
+## Why Cost Governor?
+
+**The ONLY tool that combines cost tracking + agent economy + self-funding.**
+
+| Feature | Cost Governor | ClawWatcher | clawdbot-cost-monitor | AgentPayy | payment-skill |
+|---------|--------------|-------------|----------------------|-----------|---------------|
+| Cost Tracking | ✅ | ✅ | ✅ | ❌ | ❌ |
+| Circuit Breakers | ✅ | ❌ | ❌ | ❌ | ❌ |
+| x402 Payments | ✅ | ❌ | ❌ | ✅ | ✅ |
+| **Agents Pay for Tool** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| ClawHub Skill | ✅ | ❌ | ❌ | ❌ | ✅ |
+| Self-Funding Model | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Open Source | ✅ | ❓ | ✅ | ✅ | ✅ |
+
+**Cost Governor is first-mover on the intersection:**
+- **ClawWatcher** = monitoring only (no payments)
+- **AgentPayy** = payments only (no cost tracking)
+- **Cost Governor** = monitoring + payments + **agents autonomously subscribe & pay**
+
+Economic rationale: If Cost Governor saves your agent >0.5 USDT/month in optimized costs, it pays for itself. No human approval needed.
 
 ## Installation
 
