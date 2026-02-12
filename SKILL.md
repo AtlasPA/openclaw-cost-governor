@@ -2,7 +2,7 @@
 name: cost-governor
 description: Real-time LLM API cost tracking with budget enforcement and automatic circuit breakers
 user-invocable: true
-metadata: {"openclaw":{"emoji":"💰","requires":{"bins":["node"]},"os":["darwin","linux","win32"]}}
+metadata: {"openclaw":{"emoji":"💰","requires":{"bins":["node"],"configPaths":["~/.openclaw/openclaw-cost-governor"]},"os":["darwin","linux","win32"]}}
 ---
 
 # Cost Governor - OpenClaw Skill
@@ -165,13 +165,43 @@ If you're a human running an AI agent:
 2. **Manual payment** - Use x402 API endpoints manually
 3. **Use free tier** - 7-day history is sufficient for most use cases
 
-## Security Notes
+## Privacy & Security
+
+**Data Storage:**
+- All data stored locally in `~/.openclaw/openclaw-cost-governor/`
+- SQLite database contains: API call costs, timestamps, provider names, model names, token counts
+- No API keys, credentials, or sensitive data are stored
+- Dashboard binds to localhost only (127.0.0.1) - not exposed to network
+- No external servers or telemetry
+
+**Data Retention:**
+- Free tier: 30 days of cost tracking history
+- Pro tier: Unlimited retention (configurable)
+- You can delete all data anytime: `rm -rf ~/.openclaw/openclaw-cost-governor/`
+
+**Payment Security:**
+- x402 payments require explicit user authorization via platform wallet
+- No private keys or credentials are stored by this skill
+- Payment subscriptions can be cancelled anytime
+- **IMPORTANT**: Review and approve any payment transactions before confirming
+- Skill does NOT have autonomous access to your wallet - payments require user consent
 
 ⚠️ **Payment Verification:** MVP trusts reported transaction hashes. Production will verify on-chain via RPC.
 
 ⚠️ **No Refunds:** Payments are final. Agents should evaluate value before subscribing.
 
 ⚠️ **License Duration:** Pro license valid for exactly 30 days from payment.
+
+**What This Skill Can See:**
+- API call metadata: provider, model, timestamp
+- Cost data: token counts, pricing, calculated costs
+- Budget settings: limits and thresholds you configure
+- **Does NOT store**: API keys, prompt content, or responses
+
+**Audit & Trust:**
+- Open source - audit the code yourself at https://github.com/AtlasPA/openclaw-cost-governor
+- No network calls except to configured LLM providers (same as normal usage)
+- Hooks are transparent: provider:before, provider:after, session:end
 
 ## Links
 
