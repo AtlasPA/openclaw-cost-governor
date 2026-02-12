@@ -1,5 +1,6 @@
 ---
 name: cost-governor
+description: Real-time LLM API cost tracking with budget enforcement and automatic circuit breakers
 user-invocable: true
 metadata: {"openclaw":{"emoji":"💰","requires":{"bins":["node"]},"os":["darwin","linux","win32"]}}
 ---
